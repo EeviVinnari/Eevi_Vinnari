@@ -101,7 +101,7 @@
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-          <img src="C:\Eevi_Vinnari\mozilla_splash\originals\firefoxlogo120.png" alt="small firefox logo">
+          <img src="originals/firefoxlogo120.png" alt="small firefox logo">
 
     </header>
 
@@ -127,22 +127,42 @@
         <!-- insert images with srcsets and sizes -->
 
         
-        <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img alt="Mozilla Firefox" src="C:\Eevi_Vinnari\mozilla_splash\originals\firefoxlogo400.png"
-          width="400" height="250">
+        <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">
+          <img 
+          src="originals/firefoxlogo120.png"
+          target="_blank"
+          alt="Mozilla Firefox Logo"
+          srcset="
+          originals/firefoxlogo120.png 120w,
+          originals/firefoxlogo400.png 400w
+          "
+          sizes="(max-width: 500px) 120px, 400px"/>
         </a>
-        <a href="https://www.mozilla.org/">
-          <img alt="Mozilla Dinosaur" src="C:\Eevi_Vinnari\mozilla_splash\originals\mozilladinosaur400.png"
-          width="400" height="250">
+
+        <a href="https://www.mozilla.org/" target="_blank">
+          <img 
+          src="originals/mozilladinosaur120.png"
+          alt="Mozilla Dinosaur"
+          srcset="
+          originals/mozilladinosaur120.png 120w,
+          originals/mozilladinosaur400.png 400w
+          "
+          sizes="(max-width: 500px) 120px, 400px"/>
         </a>
-        <a href="https://addons.mozilla.org/">
-          <img alt="Firefox" src="C:\Eevi_Vinnari\mozilla_splash\originals\firefox400.jpg"
-          width="400" height="250">
+
+        <a href="https://addons.mozilla.org/" target="_blank">
+          <img 
+          src="originals/firefox120.jpg"
+          alt="Firefox" 
+          srcset="
+          originals/firefox120.jpg 120w,
+          originals/firefox400.jpg 400w
+          "
+          sizes="(max-width: 500px) 120px, 400px"/>
         </a>
-        <a href="https://developer.mozilla.org/en-US/">
-          <img alt="MDN" src="C:\Eevi_Vinnari\mozilla_splash\originals\mdn.svg"
-          width="400" height="250">
-          
+
+        <a href="https://developer.mozilla.org/en-US/" target="_blank"> 
+          <img src="originals/mdn.svg"/>
         </a>
         <div class="clearfix"></div>
       </div>
@@ -150,7 +170,18 @@
       <div class="red-panda">
         <!-- insert picture element -->
 
-        <img src="C:\Eevi_Vinnari\mozilla_splash\originals\panda1200.jpg" alt="wide panda">
+        <picture>
+          <source
+           media="(max-width:600px)"
+           srcset="originals/panda600portrait.jpg">
+          <source
+           media="(min-width:601px)"
+           srcset="originals/panda1200.jpg">
+          <img
+           src="originals/panda600portrait.jpg"
+           alt="Picture of red-panda">
+        </picture>
+
       </div>
 
     </main>
