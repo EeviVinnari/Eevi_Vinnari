@@ -1,9 +1,36 @@
 body{
-    background-color: rgb(143, 123, 99);
+    
+    background-color: rgb(139, 126, 110);
 
 }
 .red{
     background-color: rgb(209, 209, 202);
 
 }
+a:link{
+    color: rgb(10, 10, 10);
+}
+
+a:visited{
+    color: rgb(10, 10, 10);
+}
+
+a:hover{
+    color: rgb(249, 249, 253);
+
+}
+
+footer{
+    text-align: center;
+
+}
+.row{
+    text-align: center;
+
+}
+footer{
+    border-top: 3px solid rgb(209, 209, 202) ;
+
+}
+
 
