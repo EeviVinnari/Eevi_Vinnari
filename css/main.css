@@ -32,5 +32,9 @@ footer{
     border-top: 3px solid rgb(209, 209, 202) ;
 
 }
+h1{
+    text-transform: uppercase;
+
+}
 
 
