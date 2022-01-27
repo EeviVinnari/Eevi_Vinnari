@@ -39,22 +39,28 @@
       }
       
 
-      .sidebar{
-        position: fixed;
-        width: 175px;
-        top: 100px;
-        left:0px;
-        bottom: 180px;
-        background-color: white;
-        padding-top: 15px;
-        padding-left: 15px;
-        font-size: 20px;
+      nav{
+        flex-direction: column;
+        flex-wrap: wrap;
+        float: left;
+        margin-left: 200px;
+        font-size: 26px;
       }
-      .sidebar a{
-        display: block;
-        padding: 10px, 20px;
-        color: black;
+      
+      .sidebar {
+
+        float: left;
+
+        min-height: 400px;
+        line-height: 40px;
+        padding: 15px;
+        margin: 20px;
+        text-align:left;
+        font-weight: bold;
+        font-size: 22px;
       }
+
+
 
       </style>
 </head>
@@ -62,18 +68,32 @@
     <header>
         <h1>Flex Box Examples </h1>
       </header>
+      <nav>
+        <div class="sidebar">
+          <div>
+          side bar
+          </div>
+          <div>
+          side bar
+          </div>
+          <div>
+          side bar
+          </div>
+          <div>
+          side bar
+          </div>
+          <div>
+          side bar
+          </div>
+
+        </div>
+    </nav>
 
 
 
       <section>
 
-        <div class="sidebar">
-          <p><b>side bar</b></p>
-          <p><b>side bar</b></p>
-          <p><b>side bar</b></p>
-          <p><b>side bar</b></p>
-          <p><b>side bar</b></p>
-        </div>
+      
 
 
 

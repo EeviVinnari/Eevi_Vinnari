@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+        <tr>
+            <th colspan="2">The table header</th>
+        </tr>
+        <tr>
+            <td>S.N</td>
+            <td>name</td>
+            <td>Course name</td>
+            <td>Grade</td>
+        </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Web Dev.</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Johanna</td>
+            <td>Web Dev.</td>
+            <td>5</td>
+        </tr>
+    </table>
+    <p>&nbsp;</p>
+    <table border="1">
+        <tr>
+        <td>Quick</td>
+        <td colspan="2">brown fox</td>
+        <td>jumps</td>
+        </tr>
+        <tr>
+        <td rowspan="3">over the</td>
+        <td>lazy</td>
+        <td>dog</td>
+        <td>and</td>
+        </tr>
+        <tr>
+        <td>then</td>
+        <td>it</td>
+        <td>fall</td>
+        </tr>
+        <tr>
+        <td colspan="3">prey to a hunter</td>
+        </tr>
+        </table>
+
+        <h2>Form - Example 1</h2>
+        <form action="/my-handling-form-page" method="get">
+            <ul>
+             <li>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="user_name">
+             </li>
+             <li>
+               <label for="mail">E-mail:</label>
+               <input type="email" id="mail" name="user_email">
+             </li>
+             <li>
+               <label for="msg">Message:</label>
+               <textarea id="msg" name="user_message"></textarea>
+             </li>
+             <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+            </ul>
+           </form>
+<hr>
+<form>
+    <fieldset>
+        <legend>General information</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <label for="address">Address</label>
+    <input type="text" id="address">
+
+    Birth date
+    </fieldset>
+    <fieldset>
+        <legend>Information about Web usage</legend>
+        Q1: What browser do <input type="text" name="browser">
+
+    </fieldset>
+    <button type="reset">Reset your form</button>
+    <button type="submit">Submit</button>
+
+
+
+    <h2>Form Validations - Exmaple </h2>
+    <form>
+     <label >Your Full Name</label>
+     <input  name="fname" required> <br><br>
+     <label>Your Email ID</label>
+     <input type="email"  name="email"> <br><br>
+
+    <label >Your Group ID</label>
+    <input type="text" name="gid" required minlength="7" maxlength="7"><br><br>
+    <label >When did you start your studies ?</label>
+    <input type="number"  name="year" value="2019" min="2019" max="2022"><br><br>
+    <label >Your Mobile Number </label><input type="tel"  name="tel"><br><br>
+    <label >Date & Time </label><input type="datetime-local" name="datetime"><br><br>
+    <label >Month & Year </label><input type="month" name="month" ><br><br>
+    <label > Time </label> <input type="time" name="time" ><br><br>
+    <label >Week Number </label><input type="week" name="week" ><br><br>
+    <label >Color Picker </label><input type="color" name="color" ><br><br>
+  <button>Submit</button>
+
+
+  
+
+</form>
+</body>
+</html>
